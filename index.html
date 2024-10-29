@@ -1,74 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="es">
+    <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Club Atletico Neuquen</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.jpeg" alt="Logo Atletico Neuquen" />
-        </div>
-    <br />
-        <nav>
-            <ul>
-                <li><a href="#informacion">Inicio</a></li>
-                <li><a href="#ayuda">Nosotros</a></li>
-            </ul>
+    <div class="header">
+        <img src="imagenes/logoatletico.img.jpg" alt="Logo Equipo" width="90" height="90" style="border-radius: 15px;" >
+        <nav class="nav">
+            <div><a href="https://clubatleticoneuquen.com.ar/ayuda">Ayuda</a></div>
         </nav>
-    </header>
-    <section id="inicio" class="inicio">
-        <div class="inicio-contenido">
-            <h1> Club Atletico Neuquen </h1>
-        </div>
-    </section>
+    </div>
 
-    <section id="formulario" class="formulario">
-        <h2> Formulario para nuevos socios </h2>
-        <form action="#">
-            <!-- NOMBRE -->
-            <label for="nombre"> Nombre Completo: </label>
-            <input type="text" id="nombre" name="nombre" />
-            <br />
-            <!-- DNI -->
-            <label for="dni"> DNI: </label>
-            <input type="text" id="dni" name="dni" size="10" maxlength="8"/>
-            <br />
-            <!-- FECHA -->
-            <label for="edad"> Edad: </label>
-            <input type="text" id="edad" name="edad" size="5" maxlength="3" />
-            <br />
-            <!-- CORREO -->
-            <label for="correo"> Correo Electronico: </label>
-            <input type="text" id="correo" name="correo" />
-            <br />
-            <!-- TELEFONO -->
-            <label for="telefono"> Telefono Movil: </label>
-            <input type="text" id="telefono" name="telefono" size="15" maxlength="13"/>
-            <br />
-            <!-- DOMICILIO -->
-            <label for="domicilio"> Domicilio: </label>
-            <input type="text" id="domicilio" name="domicilio" />
-            <br />
-            <!-- TIPO PAGO  -->
-            <label for="tipopago"> Tipo de pago: </label>
-            <select name="tipopago" id="tipopago" >
-                <option value=""> -Seleccione Tipo </option> 
-                <option value="credito"> Credito </option>
-                <option value="debito"> Debito </option>
-                <option value="efectivo"> Efectivo </option>
-            </select>
-            <br />
-            <!-- CARNET -->
-            <label for="carnet"> Foto tipo carnet (fondo blanco): </label>
-            <input type="file" id="carnet" name="carnet" />
-            <br />
-            <!-- BOTON ENVIAR -->
-            <button type="submit"> Enviar </button>
+    <div class="form-container">
+        <h1> Club Atletico Neuquén </h1>
+        <h2> FORMULARIO PARA NUEVOS SOCIOS </h2>
+        <!--FORMULARIO-->
+        <form>
+            <div class="datos">
+                <label for="nombre"> Nombre Completo </label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="datos">
+                <label for="dni"> DNI </label>
+                <input type="text" id="dni" name="dni" required>
+            </div>
+
+            <div class="datos">
+                <label for="fecha"> FECHA DE NACIMIENTO </label>
+                <input type="date" id="fecha" name="fecha" value= required>
+            </div>
+
+            <div class="datos">
+                <label for="email"> CORREO ELECTRONICO </label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="datos">
+                <label for="telefono"> TELEFONO MOVIL </label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <div class="datos">
+                <label for="domicilio"> DOMICILIO </label>
+                <input type="text" id="domicilio" name="domicilio" required>
+            </div>
+
+            <div class="tipo_pago">
+                <label>TIPO DE PAGO</label>
+                <input type="text" name="pago" required>
+            </div>
+
+            <div class="foto_carnet">
+                <label> FOTO TIPO CARNET (FONDO BLANCO)</label>
+                <input type="file" name="Elegir Archivo=">
+                <button type="submit">Subir</button>
+            </div>
+
+            <div class="options">
+                <p> ¿COMO QUERES RETIRAR TU CARNET? </p>
+                <div class="radio-group">
+                    <input type="radio" id="club" name="delivery" value="club">
+                    <label for="club"> RETIRO MI CARNET EN EL CLUB </label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="correo" name="delivery" value="correo">
+                    <label for="correo"> QUIERO QUE ME LO ENVIEN POR CORREO </label>
+                </div>
+            </div>
+            <button type="submit">ENVIAR</button>
         </form>
-    </section>
-</body>
 </html>
