@@ -110,3 +110,20 @@ section img:hover{
     opacity: 1;
     filter: contrast(120%);
 }
+
+button:hover {
+    background-color: #ffffff;
+}
+
+.payment-section {
+    margin-bottom: 50px;
+}
+
+.social-icons img {
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+    border-radius: 30px; 
+}
