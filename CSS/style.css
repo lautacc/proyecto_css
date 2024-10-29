@@ -71,3 +71,42 @@ input[type="tel"] {
     margin-bottom: 20px;
     border-radius: 4px;
 }
+
+.delivery-options {
+    margin: 20px 0;
+}
+
+.radio-group {
+    margin: 10px 0;
+}
+
+button {
+    background-color: hsl(229, 93%, 48%);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+section{
+    display: flex;
+    width: 790px;
+    height: 300px;
+}
+
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
