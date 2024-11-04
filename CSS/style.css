@@ -4,7 +4,11 @@ body {
     margin: 20px auto;
     padding: 20px;
     background-color: #f5f5f5;
+<<<<<<< HEAD
     background-image:url(../imagenes/atletico-neuquen4.png);
+=======
+    background-image: url(../imagenes/atletico-neuquen4.png);
+>>>>>>> 23af2b8c84f6cb2976f5d0dc3201c33f152c851c
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -109,4 +113,21 @@ section img:hover{
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
+}
+
+button:hover {
+    background-color: #ffffff;
+}
+
+.payment-section {
+    margin-bottom: 50px;
+}
+
+.social-icons img {
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+    border-radius: 30px; 
 }
