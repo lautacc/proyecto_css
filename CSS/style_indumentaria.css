@@ -64,6 +64,11 @@ nav a {
     padding: 15px; /* Espacio interno */
     background-color: #f9f9f9; /* Color de fondo */
     text-align: center; /* Centra texto */
+    transition: transform 0.3s ease; /* Animacion cuando pasas el cursos por encima */
+}
+
+.product:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la animacion */
 }
 
 .product img {
@@ -72,6 +77,20 @@ nav a {
     object-fit: cover; /* Ajusta la imagen para llenar el contenedor */
     border-radius: 5px; /* Bordes redondeados */
     margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f11717a4;
 }
 
 footer {
