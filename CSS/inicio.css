@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente de letras */
+    background-color: #f5f5f5;/* Color de fondo */
+    background-image:url(../imagenes/fondoinicio2.jpg);/* Imagen de fondo */
+    background-repeat: no-repeat;/* Que la imagen de fondo no se repita */
+    background-size: cover;/* Para que la imagen cubra todo el fondo */
+    background-attachment: fixed;/* Para que la imagen este inmovil */
+    color:#ffffff;/* Color */
+}
+.header {
+    display: flex;/* Hace el contenedor flexible */
+    justify-content: center;/* Centra los elementos horizontalmente */
+    align-items: center;/* Centra los elementos verticalmente */
+    margin-bottom: 30px;/* Controla el espacio debajo de la caja */
+    background-color: #fcfcfc;
+    color: rgb(53, 0, 243);
+    padding: 10px 20px;/* El espacio entre el contenido y los bordes de la caja */
+}
+h1 {
+    padding: 10px 500px 10px 20px;
+    font-size: 40px;/* Tamaño de la fuente */
+    text-shadow: 1px 1px black;
+}
+.nav {
+    display: flex;
+    gap: 30px;/* Espacio entre los elementos del contenedor */
+}
+nav div a{
+    text-decoration: none;/* Quita la linea que se pone abajo de los links */
+}
+nav div a:hover{
+    color: rgb(235, 0, 0);
+    text-shadow: 2px 2px 5px rgba(161, 30, 20, 0.6);
+}
