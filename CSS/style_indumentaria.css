@@ -1,81 +1,60 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    margin: 0; /* Elimina márgenes  */ 
+    padding: 0; /* Elimina el relleno interno del body */
+    background-color: #f8f9fa; /* Color de fondo */
 }
 
 header {
-    background-color: #ff0202;
-    color: white;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #ff0202; /* Color de fondo en el encabezado */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    display: flex; /* Configuración de flexbox */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    justify-content: center; /* Alinea los elementos horizontalmente al centro */
 }
 
+/* Contenedor del logo */
 .logo {
-    display: flex;
-    align-items: center;
+    display: flex; /* Hace que el item sea flexible y asi poderlo mover */
+    align-items: center; /* Centra verticalmente el contenido */
 }
 
 .logo img {
-    width: 85px;
-    height: 90px;
-    border-radius: 15px;
-    margin-right: 15px; 
-    box-shadow: 0px 4px 8px rgba(71, 8, 8, 0.2); 
+    width: 85px; /* Ancho fijo */
+    height: 90px; /* Alto fijo */
+    border-radius: 15px; /* Bordes redondeados */
+    margin-right: 15px; /* Espaciado a la derecha */
+    box-shadow: 0px 4px 8px rgba(71, 8, 8, 0.2); /* Sombras */
 }
 
 .logo h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0;
-    font-family: 'Arial Black', sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    font-size: 2rem; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    margin: 0; /* Elimina márgenes */
+    font-family: 'Arial Black', sans-serif; /* Fuente del texto */
+    letter-spacing: 1px; /* Espacio entre las letras */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
 }
 
 nav {
-    margin: 10px 0;
+    margin: 10px 0; /* Márgenes verticales */
 }
 
+/* Enlaces dentro de la navegación */
 nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
-}
+    margin: 0 15px; /* Espaciado horizontal entre enlaces */
+    color: white; /* Color del texto */
 
-.product {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 15px;
-    text-align: center;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.product img {
-    width: 200px; 
-    height: 200px; 
-    object-fit: cover; /* sirve para ajustar la imagen adentro del contenedor */
-    border-radius: 5px; 
-}
-
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #090cc7;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    position: relative; /* Permite que se mueva con el atributo bottom */
+    bottom: -120px; /* Ajusta la posición vertical */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espacio interno */
+    background-color: #090cc7; /* Color de fondo */
+    color: white; /* Color del texto */
+    width: 100%; /* Ancho */
+    font-family: 'Monaco'; /* Fuente del texto */
 }
