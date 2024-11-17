@@ -59,8 +59,8 @@ h2 {
     font-size: 30px;
     padding-top: 100px;/* Controla el padding para arriba */
     justify-content: center;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+    color: rgb(55, 0, 255);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.9);
 }
 button {
     background-color: hsl(229, 93%, 48%);
@@ -96,4 +96,20 @@ button:hover {
 }
 .payment-section {
     margin-bottom: 50px;
+}
+.social-icons img {
+    transition: transform 0.7s ease; /* Crea una transicion mas suave */
+}
+.social-icons img:hover {
+    transform: scale(1.1); /* La imagen se hace un 10% mas grande */
+}
+.social-icons img:hover {
+    transform: scale(1.1);
+    border-radius: 30px; 
+}
+.footer h3{
+    color: #525151;
+}
+.contactos{
+    color: #525151;
 }
