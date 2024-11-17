@@ -48,6 +48,32 @@ nav a {
 
 }
 
+.products {
+    display: grid; /* Organiza los elementos  */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Crea columnas flexibles */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px; /* Espacio interno o relleno interno */
+}
+
+.product {
+    display: flex; /* Hace que el elemento se pueda mover */
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+    border: 1px solid #0011ff; /* Color de los bordes */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espacio interno */
+    background-color: #f9f9f9; /* Color de fondo */
+    text-align: center; /* Centra texto */
+}
+
+.product img {
+    width: 200px; /* Ancho fijo */
+    height: 200px; /* Alto fijo */
+    object-fit: cover; /* Ajusta la imagen para llenar el contenedor */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
 footer {
     position: relative; /* Permite que se mueva con el atributo bottom */
     bottom: -120px; /* Ajusta la posición vertical */
