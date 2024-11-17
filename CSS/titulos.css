@@ -1,0 +1,74 @@
+body{
+    background-image:url(../imagenes/fondotitulos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color:#1658af;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+       
+}
+header {
+    background-color: #ff0202;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;
+    margin-right: 12px; 
+}
+
+.logo h2 {
+    font-size: 60px;
+    font-weight: bold;
+    margin:0;
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Arial Black', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    font-family: 'Arial Black', sans-serif;
+    color: rgb(249, 249, 250);
+}
+.tituls{
+    height: 500px;
+    width: 800px;
+    border: 1px solid #471919;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 50px;
+    text-align: center;
+    background-color: rgb(143, 2, 2);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    justify-content: center;
+}
+
+.titulo {
+text-align: center;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.copa{
+float: left;
+box-shadow: 0px 8px 120px rgba(8, 0, 0, 0.2); 
+border-radius: 12px;
+}
