@@ -97,7 +97,6 @@ section img:hover {
 }
 /* Pie de página */
 .footer {
-    background-color: rgba(252, 252, 252, 0.95); /* Fondo semi-transparente */
     padding: 3rem 5%;          /* Relleno interno */
     margin-top: 4rem;          /* Margen superior */
     border-top: 5px solid var(--secondary-color); /* Borde superior */
@@ -160,12 +159,6 @@ button:hover {
         padding: 1rem;                          /* Reduce el espaciado */
     }
 }
-    h1 {
-        font-size: 2rem;                        /* Reduce el tamaño del título */
-        padding: 1rem;                          /* Ajusta el espaciado */
-        text-align: center;                     /* Centra el texto */
-    }
-    
     .nav {
         margin-top: 1rem;                       /* Añade espacio superior */
         justify-content: center;                /* Centra los elementos */
