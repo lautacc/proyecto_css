@@ -115,63 +115,67 @@ section img:hover {
     font-size: 1.8rem;         /* Tamaño de la fuente */
     margin-bottom: 1.5rem;     /* Margen inferior */
 }
-/* Enlaces de redes sociales */
-.social-icons a {
-    margin: 0 1rem;            /* Márgenes horizontales */
-    display: inline-block;     /* Tipo de visualización */
+section img{
+    width: 0px;
+    flex-grow: 1;/* Cuanto crecen las imagenes */
+    object-fit: cover;/* Ajusta el contenido */
+    opacity: 0.8;/* Transparencia del elemento */
+    transition: 0.5s ease;/* Cuanto tarda la transicion */
 }
-
-/* Imágenes de redes sociales */
-.social-icons img {
-    transition: var(--transition); /* Transición suave */
-    opacity: 0.8;              /* Transparencia inicial */
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);/* Ajusta el contraste */
 }
-
-/* Efecto al pasar el mouse sobre iconos sociales */
+button:hover {
+    background-color: #ffffff;
+}
+.payment-section {
+    margin-bottom: 50px;
+/* Iconos sociales */
 .social-icons img:hover {
-    transform: scale(1.2) rotate(10deg); /* Aumenta tamaño y rota */
-    opacity: 1;                /* Sin transparencia */
+    transform: scale(1.2) rotate(10deg);        /* Aumenta tamaño y rota */
+    opacity: 1;                                 /* Totalmente visible */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
 }
-
-/* Sección de contactos */
-.contactos {
-    text-align: center;        /* Alineación del texto */
-    color: var(--text-dark);   /* Color del texto */
 }
 
-/* Párrafos de contacto */
-.contactos p {
-    margin: 0.5rem 0;          /* Márgenes superior e inferior */
-    font-size: 1.1rem;         /* Tamaño de la fuente */
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;                             /* Comienza invisible */
+        transform: translateY(20px);            /* Comienza 20px abajo */
+    }
+    to {
+        opacity: 1;                             /* Termina visible */
+        transform: translateY(0);               /* Termina en su posición normal */
+    }
 }
 
-/* Diseño responsivo para dispositivos móviles */
+/* Ajustes para dispositivos móviles */
 @media (max-width: 768px) {
-    /* Ajustes para el encabezado en pantallas pequeñas */
     .header {
-        flex-direction: column;  /* Cambia la dirección del flex */
-        padding: 1rem;          /* Reduce el relleno */
-    }
-
-    /* Ajusta el tamaño del título */
-    h1 {
-        font-size: 2rem;        /* Reduce el tamaño de la fuente */
-        padding: 1rem 0;        /* Ajusta el relleno */
-    }
-
-    /* Ajusta el espacio de la navegación */
-    .nav {
-        margin-top: 1rem;       /* Añade margen superior */
-    }
-
-    /* Ajusta la altura de la galería */
-    section {
-        height: 300px;          /* Reduce la altura */
-    }
-
-    /* Ajusta el ancho de las imágenes en hover */
-    section img:hover {
-        width: 200px;           /* Reduce el ancho máximo */
+        flex-direction: column;                 /* Cambia la dirección a vertical */
+        padding: 1rem;                          /* Reduce el espaciado */
     }
 }
+    h1 {
+        font-size: 2rem;                        /* Reduce el tamaño del título */
+        padding: 1rem;                          /* Ajusta el espaciado */
+        text-align: center;                     /* Centra el texto */
+    }
+    
+    .nav {
+        margin-top: 1rem;                       /* Añade espacio superior */
+        justify-content: center;                /* Centra los elementos */
+        flex-wrap: wrap;                        /* Permite que los elementos se envuelvan */
+    }
+    
+    section {
+        height: 300px;                          /* Reduce la altura de la galería */
+    }
+    
+    section img:hover {
+        width: 200px;                           /* Reduce el ancho al hacer hover */
+    }
