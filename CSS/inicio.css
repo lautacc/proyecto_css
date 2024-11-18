@@ -66,7 +66,35 @@ h2 {
     text-align: center;        /* Alineación del texto */
     margin-bottom: 2rem;       /* Margen inferior */
 }
+/* Contenedor de imágenes */
+section {
+    display: flex;             /* Diseño flexible */
+    height: 400px;             /* Altura fija */
+    gap: 1rem;                 /* Espacio entre imágenes */
+    padding: 1rem;             /* Relleno interno */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    border-radius: 15px;       /* Bordes redondeados */
+}
 
+/* Estilos para las imágenes */
+section img {
+    width: 0;                  /* Ancho inicial */
+    flex-grow: 1;              /* Permite que la imagen crezca */
+    object-fit: cover;         /* Ajusta la imagen manteniendo proporciones */
+    border-radius: 10px;       /* Bordes redondeados */
+    opacity: 0.6;              /* Transparencia inicial */
+    transition: var(--transition); /* Transición suave */
+    filter: grayscale(50%);    /* Efecto de escala de grises */
+}
+
+/* Efecto al pasar el mouse sobre las imágenes */
+section img:hover {
+    width: 400px;              /* Ancho al hacer hover */
+    opacity: 1;                /* Sin transparencia */
+    filter: grayscale(0%) contrast(110%); /* Elimina escala de grises y aumenta contraste */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Sombra */
+    cursor: pointer;           /* Cambia el cursor */
+}
 button {
     background-color: hsl(229, 93%, 48%);
     color: rgb(0, 0, 0);
