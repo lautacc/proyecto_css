@@ -115,38 +115,63 @@ section img:hover {
     font-size: 1.8rem;         /* Tamaño de la fuente */
     margin-bottom: 1.5rem;     /* Margen inferior */
 }
-section img{
-    width: 0px;
-    flex-grow: 1;/* Cuanto crecen las imagenes */
-    object-fit: cover;/* Ajusta el contenido */
-    opacity: 0.8;/* Transparencia del elemento */
-    transition: 0.5s ease;/* Cuanto tarda la transicion */
+/* Enlaces de redes sociales */
+.social-icons a {
+    margin: 0 1rem;            /* Márgenes horizontales */
+    display: inline-block;     /* Tipo de visualización */
 }
-section img:hover{
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);/* Ajusta el contraste */
-}
-button:hover {
-    background-color: #ffffff;
-}
-.payment-section {
-    margin-bottom: 50px;
-}
+
+/* Imágenes de redes sociales */
 .social-icons img {
-    transition: transform 0.7s ease; /* Crea una transicion mas suave */
+    transition: var(--transition); /* Transición suave */
+    opacity: 0.8;              /* Transparencia inicial */
 }
+
+/* Efecto al pasar el mouse sobre iconos sociales */
 .social-icons img:hover {
-    transform: scale(1.1); /* La imagen se hace un 10% mas grande */
+    transform: scale(1.2) rotate(10deg); /* Aumenta tamaño y rota */
+    opacity: 1;                /* Sin transparencia */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
 }
-.social-icons img:hover {
-    transform: scale(1.1);
-    border-radius: 30px; 
+
+/* Sección de contactos */
+.contactos {
+    text-align: center;        /* Alineación del texto */
+    color: var(--text-dark);   /* Color del texto */
 }
-.footer h3{
-    color: #525151;
+
+/* Párrafos de contacto */
+.contactos p {
+    margin: 0.5rem 0;          /* Márgenes superior e inferior */
+    font-size: 1.1rem;         /* Tamaño de la fuente */
 }
-.contactos{
-    color: #525151;
+
+/* Diseño responsivo para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Ajustes para el encabezado en pantallas pequeñas */
+    .header {
+        flex-direction: column;  /* Cambia la dirección del flex */
+        padding: 1rem;          /* Reduce el relleno */
+    }
+
+    /* Ajusta el tamaño del título */
+    h1 {
+        font-size: 2rem;        /* Reduce el tamaño de la fuente */
+        padding: 1rem 0;        /* Ajusta el relleno */
+    }
+
+    /* Ajusta el espacio de la navegación */
+    .nav {
+        margin-top: 1rem;       /* Añade margen superior */
+    }
+
+    /* Ajusta la altura de la galería */
+    section {
+        height: 300px;          /* Reduce la altura */
+    }
+
+    /* Ajusta el ancho de las imágenes en hover */
+    section img:hover {
+        width: 200px;           /* Reduce el ancho máximo */
+    }
 }
