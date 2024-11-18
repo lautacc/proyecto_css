@@ -103,3 +103,22 @@ footer {
     width: 100%; /* Ancho */
     font-family: 'Monaco'; /* Fuente del texto */
 }
+.carrito-container {
+    position: fixed; /* Mantiene el contenedor en una posición fija */
+    top: 20px; /* Distancia desde el borde superior */
+    right: 20px; /* Distancia desde el borde derecho */
+    display: flex; /* Usar flexbox para alinear */
+    align-items: top; /* Alinea al borde superior */
+    justify-content: center; /* Centra horizontalmente */
+    background-color: #007BFF; /* Fondo azul */
+    padding: 8px 12px; /* Relleno interno */
+    border-radius: 40%; /* Forma redondeada */
+    box-shadow: 0 15px 10px rgba(41, 41, 41, 0.694); /* Sombra para dar profundidad */
+}
+
+/* Logo del carrito */
+.carrito-logo {
+    width: 50px; /* Ancho fijo */
+    height: auto; /* Ajusta la altura proporcionalmente */
+    position: scroll; /* Define un comportamiento de scroll (aunque no es necesario aquí) */
+}
