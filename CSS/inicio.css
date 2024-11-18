@@ -95,21 +95,25 @@ section img:hover {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Sombra */
     cursor: pointer;           /* Cambia el cursor */
 }
-button {
-    background-color: hsl(229, 93%, 48%);
-    color: rgb(0, 0, 0);
-    padding: 10px 20px;
-    border: none;/* Elimina el borde */
-    border-radius: 4px;/* Redondea las esquinas */
-    cursor: pointer;/* Cambia como se ve el cursor */
-    width: 100%;/* Ancho */
-    font-size: 16px;
+/* Pie de página */
+.footer {
+    background-color: rgba(252, 252, 252, 0.95); /* Fondo semi-transparente */
+    padding: 3rem 5%;          /* Relleno interno */
+    margin-top: 4rem;          /* Margen superior */
+    border-top: 5px solid var(--secondary-color); /* Borde superior */
 }
-section{
-    display: flex;
-    height: 300px;/* Alto */
-    align-items: center;
-    justify-content: center;
+
+/* Contenedor de iconos sociales */
+.social-icons {
+    text-align: center;        /* Alineación del texto */
+    margin-bottom: 2rem;       /* Margen inferior */
+}
+
+/* Título de la sección de redes sociales */
+.social-icons h3 {
+    color: var(--primary-color); /* Color del texto */
+    font-size: 1.8rem;         /* Tamaño de la fuente */
+    margin-bottom: 1.5rem;     /* Margen inferior */
 }
 section img{
     width: 0px;
