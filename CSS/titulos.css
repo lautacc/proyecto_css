@@ -1,91 +1,157 @@
-body{
-    background-image:url(../imagenes/fondotitulos.jpg);
+/* Estilos Globales del Cuerpo */
+body {
+    /* Establece una imagen de fondo desde la carpeta imagenes */
+    background-image: url(../imagenes/fondotitulos.jpg);
+    /* Evita que la imagen de fondo se repita */
     background-repeat: no-repeat;
+    /* Escala la imagen de fondo para cubrir toda la pantalla */
     background-size: cover;
+    /* Fija la imagen de fondo durante el desplazamiento */
     background-attachment: fixed;
-    color:#1658af;
+    /* Establece el color de texto principal a un azul profundo */
+    color: #1658af;
+    /* Define la familia de fuentes principal */
     font-family: Arial, sans-serif;
+    /* Elimina el margen predeterminado del cuerpo */
     margin: 0;
+    /* Elimina el relleno predeterminado del cuerpo */
     padding: 0;
-       
 }
+
+/* Contenedor de Encabezado */
 header {
+    /* Establece el fondo del encabezado en rojo brillante */
     background-color: #ff0202;
+    /* Establece el color del texto del encabezado en blanco */
     color: white;
+    /* Añade relleno interno */
     padding: 10px;
+    /* Usa flexbox para centrar horizontal y verticalmente */
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
+
+/* Contenedor del Logotipo */
 .logo {
+    /* Usa flexbox para alinear elementos del logotipo */
     display: flex;
     align-items: center;
 }
 
+/* Estilo de Imagen del Logotipo */
 .logo img {
+    /* Establece dimensiones específicas para la imagen del logotipo */
     width: 120px;
     height: 120px;
+    /* Añade margen derecho para separar imagen de texto */
     margin-right: 12px; 
 }
 
+/* Estilo de Texto del Logotipo */
 .logo h2 {
+    /* Tamaño de fuente grande */
     font-size: 60px;
+    /* Peso de fuente negrita */
     font-weight: bold;
-    margin:0;
+    /* Elimina el margen predeterminado */
+    margin: 0;
+    /* Usa fuente Arial Black */
     font-family: 'Arial Black', sans-serif;
+    /* Añade ligero espaciado entre letras */
     letter-spacing: 1px;
+    /* Convierte texto a mayúsculas */
     text-transform: uppercase;
 }
 
+/* Estilos de Encabezados H3 */
 h3 {
+    /* Usa fuente Arial Black */
     font-family: 'Arial Black', sans-serif;
+    /* Establece color de texto en blanco */
     color: rgb(255, 255, 255);
+    /* Añade un efecto de sombra sutil */
     box-shadow: 0 15px 5px rgba(4, 0, 255, 0.1);
 }
 
+/* Estilos de Párrafos */
 p {
+    /* Usa fuente Arial Black */
     font-family: 'Arial Black', sans-serif;
+    /* Establece color de texto casi blanco */
     color: rgb(249, 249, 250);
+    /* Añade un efecto de sombra sutil */
     box-shadow: 0 5px 5px rgba(0, 81, 255, 0.1);
 }
 
-#titulos{
-text-align: center;
-padding:150px;
-margin: 110px;
+/* Contenedor de Títulos */
+#titulos {
+    /* Centra el texto */
+    text-align: center;
+    /* Añade relleno significativo */
+    padding: 150px;
+    /* Añade margen alrededor del contenedor */
+    margin: 110px;
 }
 
-.tituls{
+/* Estilo de Caja de Títulos */
+.tituls {
+    /* Establece altura específica */
     height: 500px;
+    /* Establece anchura específica */
     width: 800px;
+    /* Añade borde sólido azul */
     border: 7px solid #0c28c9;
+    /* Redondea esquinas del borde */
     border-radius: 15px;
+    /* Centra contenido */
     text-align: center;
+    /* Establece fondo en rojo brillante */
     background-color: #ff0202;
+    /* Añade sombra de caja sutil */
     box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+    /* Centra contenido horizontalmente */
     justify-content: center;
 }
 
+/* Contenedor Flexible de Títulos */
 .titulo {
-text-align: center;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+    /* Centra texto */
+    text-align: center;
+    /* Usa flexbox */
+    display: flex;
+    /* Permite que los elementos flex se envuelvan */
+    flex-wrap: wrap;
+    /* Centra contenido horizontalmente */
+    justify-content: center;
 }
 
-.copa{
-float: left;
-box-shadow: 2px 8px 120px rgba(255, 255, 255, 0.2); 
-border-radius: 12px;
+/* Estilo de Copa/Trofeo */
+.copa {
+    /* Flota elemento a la izquierda */
+    float: left;
+    /* Añade sombra de caja blanca grande para efecto luminoso */
+    box-shadow: 2px 8px 120px rgba(255, 255, 255, 0.2); 
+    /* Redondea esquinas */
+    border-radius: 12px;
 }
+
+/* Estilo de Pie de Página */
 footer {
-    position: relative; /* Permite que se mueva con el atributo bottom */
-    bottom: -120px; /* Ajusta la posición vertical */
-    text-align: center; /* Centra el texto */
-    padding: 20px; /* Espacio interno */
-    background-color: #090cc7; /* Color de fondo */
-    color: white; /* Color del texto */
-    width: 100%; /* Ancho */
-    font-family: 'Monaco'; /* Fuente del texto */
+    /* Permite posicionamiento relativo al flujo normal */
+    position: relative;
+    /* Empuja pie de página hacia abajo significativamente */
+    bottom: -120px;
+    /* Centra texto de pie de página */
+    text-align: center;
+    /* Añade relleno interno */
+    padding: 20px;
+    /* Establece fondo de pie de página en azul profundo */
+    background-color: #090cc7;
+    /* Establece texto de pie de página en blanco */
+    color: white;
+    /* Hace pie de página de ancho completo */
+    width: 100%;
+    /* Usa fuente Monaco */
+    font-family: 'Monaco';
 }
