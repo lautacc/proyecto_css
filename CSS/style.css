@@ -1,135 +1,135 @@
 body {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f5f5f5;
-    background-image:url(../imagenes/atletico-neuquen4.png);
-    background-image: url(../imagenes/atletico-neuquen4.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color:#ffffff;
+    font-family: Arial, sans-serif;/* Define la fuente principal del sitio */
+    max-width: 800px; /* Establece el ancho máximo del contenido */
+    margin: 20px auto; /* Centra el contenido con márgen superior e inferior */
+    padding: 20px;   /* Añade espacio interno alrededor del contenido */
+    background-color: #f5f5f5;   /* Color de fondo gris claro */
+    background-image:url(../imagenes/atletico-neuquen4.png);/* Imagen de fondo */
+    background-image: url(../imagenes/atletico-neuquen4.png);/* Imagen de fondo (repetido)*/
+    background-repeat: no-repeat;/* Evita que la imagen de fondo se repita */
+    background-size: cover;/* Hace que la imagen cubra todo el fondo */
+    background-attachment: fixed;/* Mantiene el fondo fijo al hacer scroll */
 
 }
-
+/* encabezado */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
+    display: flex; /* Usa flexbox para el layout (caja flexible)*/
+    justify-content: space-between;  /* Distribuye los elementos con espacio entre ellos */
+    align-items: center;/* Centra verticalmente los elementos */
+    margin-bottom: 30px;  /* Espacio inferior */
 }
-
+/*navegacion*/
 .nav {
-    display: flex;
-    gap: 30px;
+    display: flex;/*flexbox para layout (caja flexible)*/
+    gap: 30px;/*espacios del flexbox de navegacion*/
 }
-
+/*contenedor del formulario*/
 .form-container {
-    background-color: rgb(224, 16, 16);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    background-color: rgb(224, 16, 16);/*fondo rojo*/
+    padding: 30px; /*espacios interno*/
+    border-radius: 8px; /*bordes redondeados*/
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /*sombras ligeras*/
 }
-
+/*titulo*/
 h1 {
-    margin-bottom:  40px;
+    margin-bottom:  40px; /*espacio inferior de titulo*/
 }
-
+/*subtitulo*/
 h2 {
-    margin-bottom: 5px;
+    margin-bottom: 5px;/*espacio para subtitulo*/
 }
 
 h3 {
-    font-size: 18px;
-    margin-bottom:8px ;
-    color: rgb(36, 2, 172);
+    font-size: 18px;/*tamaño de la letra*/
+    margin-bottom:8px ; /*espacio inferior boton*/
+    color: rgb(36, 2, 172); /*color azul*/
 }
 .datos {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /*espacio inferior boton de datos*/
 }
-
+/*estilo etiquetas de formulario*/
 label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    display: block;/*cada label ocupa su linea*/
+    margin-bottom: 5px; /*espacio inferior*/
+    font-weight: bold; /*texto negrita*/
 }
 
 input[type="text"],
 input[type="email"],
 input[type="date"],
 input[type="tel"] {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-    box-sizing: border-box;
+    width: 100%; /*ancho*/
+    padding: 8px; /*espacio interno*/
+    border: 1px solid #ffffff; /*bordes blanco*/
+    border-radius: 4px; /*borde redondeado*/
+    box-sizing: border-box; /*espacio interno y ancho total*/
 }
-
+/*seccion foto carnet*/
 .foto_carnet {
-    border: 1px solid #ffffff;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 4px;
+    border: 1px solid #ffffff; /*bordes blanco*/
+    padding: 15px;/*espacio interno*/
+    margin-bottom: 20px; /*espacio inferior*/
+    border-radius: 4px; /*bordes redondeados*/
 }
-
+    /*estilo opcion de entrega*/
 .delivery-options {
-    margin: 20px 0;
+    margin: 20px 0; /*espacio superior y inferior*/
 }
-
+    /*estilo buttons radio*/
 .radio-group {
-    margin: 10px 0;
+    margin: 10px 0;/* espacio superior e inferior*/
 }
-
+     /*estilo botones*/
 button {
-    background-color: hsl(229, 93%, 48%);
-    color: rgb(0, 0, 0);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
+    background-color: hsl(229, 93%, 48%);/*color fondo azul*/
+    color: rgb(0, 0, 0); /*texto negro*/
+    padding: 10px 20px;/*espacios internos*/
+    border: none; /*sin borde*/
+    border-radius: 4px;/*borde redondo*/
+    cursor: pointer; /*cursor interactivo (puntero)*/
+    width: 100%;/*ancho*/
+    font-size: 16px;/*tamaño de letra*/
 }
-
+    /*section galeria*/
 section{
-    display: flex;
-    width: 790px;
-    height: 300px;
+    display: flex; /*caja flexible*/
+    width: 790px; /*ancho horizontal*/
+    height: 300px; /*ancho vertical*/
 }
-
+    /*section imagenes de galeria*/
 section img{
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: 0.8;
-    transition: 0.5s ease;
+    width: 0px;/* ancho inicial*/
+    flex-grow: 1; /*imagen animada (crece)*/
+    object-fit: cover;/*ajuste de imagen en proporcion*/
+    opacity: 0.8; /*transparencia*/
+    transition: 0.5s ease; /*transicion suave*/
 }
+/*ssection efectos para mouse de imagenes*/
 section img:hover{
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
+    cursor: crosshair; /*cambio de cursor*/
+    width: 300px;/*ancho de hover(cursor)*/
+    opacity: 1; /*sin transparencia*/
+    filter: contrast(120%); /*aumenta el contraste*/
 }
-
+/*efecto de botones*/
 button:hover {
-    background-color: #ffffff;
+    background-color: #ffffff; /*fondo blanco*/
 }
-
+/*section pagos*/
 .payment-section {
-    margin-bottom: 50px;
+    margin-bottom: 50px; /*espacio inferior*/
 }
-
+/*animacion redes sociales*/
 .social-icons img {
-    transition: transform 0.7s ease; 
+    transition: transform 0.7s ease; /*transicion suave y transformacion*/
 }
+/*animacion redes sociales para mouse*/
+.social-icons img:hover {
+    transform: scale(1.1); /*transformacion aumento de tamaño*/
+}
+/*efecto adicional de redes sociales*/
 
 .social-icons img:hover {
-    transform: scale(1.1); 
-}
-
-
-.social-icons img:hover {
-    transform: scale(1.1);
-    border-radius: 30px; 
+    transform: scale(1.1); /*repeticion de aumento de tamaño*/
+    border-radius: 35px; /*bordes redondeados*/
 }
